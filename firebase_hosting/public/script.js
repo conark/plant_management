@@ -1,4 +1,5 @@
-import firebase from "firebase/app"
+//import firebase from "firebase/app"
+import { getRemoteConfig } from "firebase/remote-config";
 import { getStorage } from "firebase/storage"
 import { getDatabase } from "firebase/database"
 import { getHosting } from "firebase/hosting"
@@ -6,9 +7,9 @@ import dotenv from "dotenv";
 import { env } from 'node:process';
 
 //.env ファイルの内容を読み込
-require('dotenv').config({path: '.env'});
+//require('dotenv').config({path: '.env'});
 //const functions = require('firebase-functions');
-require('dotenv').config()
+//require('dotenv').config()
 
 const firebaseConfig = {
   //apiKey: process.env.apiKey,

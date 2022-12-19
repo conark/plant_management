@@ -24,29 +24,27 @@ The environmental control system requires using cameras to monitor and record mu
 
 **Proposed tech – Software**
 
-- Firebase
-- Blynk
-- OpenCV (For camera)
+- Firebase (Storage, Web hosting)
+- Blynk (temp, humidity, notification/alarm)
+- Youtube (Live streaming)
 
 **Proposed tech - Hardware**
 
 - Raspberry Pi
 - Sensor hut
 - Raspberry Pi Camera module
-- USB connect Web camera - (Logicool HD720p)
+- USB connect Web camera (Logicool HD720p)
 - A Box as Factory 
 
 **Functions**
 
-\1. Shine the LED light on the plant - set it to alternate between red and green light every 12 minutes. (Originally every 12 hours)
+1. Shine the LED light on the plant - set it to alternate between red  and green light every 12 mins. (Originally every 12 hours)
+2. Measure and display temperature/humidity on Blynk
+3. Feed timing alarm every 12 mins on Blynk (originally every 12 hours). 
+4. Real-time monitoring with Web camera on youtube. (Optional 
+Recognition of harvest time – e.g. if tomato became red) 
+5. Send a notification/message to the phone if the temp/humidity is outside of expected range.
 
-\2. Measure and display temperature/humidity 
-
-\3. Feed using water and a culture medium every 12 minutes (originally every 12 hours). –alarm indicates when the time for feeding comes.
-
-\4. Real-time monitoring with camera.  (Optional Recognition of harvest time – e.g. if tomato became red)
-
-\5. Send a notification/message to the phone if the temp/humidity is outside of expected range.
 
 
 ![Project Diagram 1 (1)](https://user-images.githubusercontent.com/62657957/205108305-e7717d0a-cf22-4771-b7db-340660751ae0.png)
