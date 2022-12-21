@@ -35,7 +35,7 @@ The environmental control system requires using cameras to monitor and record mu
 - USB connect Web camera (Logicool HD720p)
 - A Box as Factory 
 
-**Functions**
+# **Functions**
 
 1. Shine the LED light on the plant - set it to alternate between red and green light every 12 seconds. (Originally every 12 hours)
 2. Measure and display temperature/humidity on Blynk
@@ -46,12 +46,15 @@ The environmental control system requires using cameras to monitor and record mu
 7. Web hosting for latest updated photo
 
 
-**Prepareraion**
+# **Prepareraion**
+
 • Rasberry pi 
+
  - Attach the sense hat, camera module, and webcam (USB port) to the raspberry pi.
 ![PXL_20221221_224914983](https://user-images.githubusercontent.com/62657957/209018247-5441610a-aa4c-4e98-b1f4-00bba3289a25.jpg)
  - Configure the Raspberry Pi to use VS Code with SSH connection.
  - Raspberry Pi config setting  - Camera enable on
+
 • Blynk
  - Create template
 ![Screenshot 2022-12-21 at 15 42 19](https://user-images.githubusercontent.com/62657957/209017081-c1e28274-f1a5-4554-a6f2-84836ac75100.png)
@@ -68,9 +71,6 @@ The environmental control system requires using cameras to monitor and record mu
  - Web dashboad set up (Youtube URL added on Video widget, Datastream setting on Gauge and chart)
 ![Screenshot 2022-12-21 at 16 03 22](https://user-images.githubusercontent.com/62657957/209016407-e2d938e1-beb3-478e-acf8-62f1bea6d2f8.png)
 ![Screenshot 2022-12-21 at 16 05 02](https://user-images.githubusercontent.com/62657957/209016288-b81ce3cb-8b5f-405c-a126-c229bd045069.png)
-
-
-
 ![Screenshot 2022-12-21 at 16 05 13](https://user-images.githubusercontent.com/62657957/209015912-3157addb-cefd-4a1d-8786-843902d0fbd5.png)
 ![Screenshot 2022-12-21 at 16 05 02](https://user-images.githubusercontent.com/62657957/209015923-fe7920ea-7422-444f-999a-92e1d832399e.png)
 
@@ -80,9 +80,11 @@ The environmental control system requires using cameras to monitor and record mu
 
 
 • Youtube (Live streaming)
+
  - Request access to live stream on Youtube Studio
  - Create Live schedule and get stream key
  - install FFmpeg on Raspberry pi
+
 • Firebase
  - install firebase tool to Raspberry pi
  - Create project on Firebase console
@@ -90,7 +92,9 @@ The environmental control system requires using cameras to monitor and record mu
 
 
 # **Overview**
+
 **temp_humid.py:**
+
 To Run type in the command: python3 temp_humid.py
 
 (1) Get temperature and humidity with Sense Hat and communicate with Blynk.
@@ -98,7 +102,9 @@ To Run type in the command: python3 temp_humid.py
 (2) If the temperature is above or below the set temperature, send a logEvent request with a code of either temp_too_high or temp_too_low to the Blynk server. Similarly, if the humidity is above or below the configured humidity, it will send a logEvent request with either the code humidity_too_high or humidity_too_low to the Blynk server. This will notify you via popup and email in the Blynk application.
 
 **schedule_pi.py:**
+
 To Run type in the command: python3 schedule_pi.py
+
 It schedules light lighting and light color switch schedule, feeding time alarm, and image capture.
 
 (1) The LED light of the sense hat is set with the python schedule library that it lights up in red or green at a set time.
@@ -106,17 +112,22 @@ It schedules light lighting and light color switch schedule, feeding time alarm,
 (3) Send an HTTP GET request to the URL and send a log event to the API endpoint using Python's requests library to notify the feeding time of water etc. Blynk's Event settings will send push notifications and emails.
 
 **storeFileFB.py**
+
 Upload files to Google Cloud Storage and push filenames to Realtime Database
 
 **streaming.py**
+
 To Run type in the command: python3 streaming.py
+
 Using Python's subprocess module to run the streaming.sh script
 
 **streaming.sh**
+
 A script that uses ffmpeg commands to start YouTube Live streaming.
 If don't use streaming.py, able to run with ./streaming.sh
 
 **Web hosting**
+
 firebase-hosting: https://plant-factory-d18f0.web.app/
 glitch: https://plant-factory-project.glitch.me/
 
