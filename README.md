@@ -1,5 +1,5 @@
 
-# plant_factory_environment_management
+# Plant Factory Environment Management
 ![greenhouse-g005435a15_1920](https://user-images.githubusercontent.com/62657957/201473476-76da5457-6719-4da1-8280-bd0b45de6ff4.jpg)
 
 
@@ -17,17 +17,18 @@ Today, various technologies have been incorporated into agriculture. This create
 
 The environmental control system requires using cameras to monitor and record multiple growth factors such as temperature, humidity, light. Timers indicate when to open and close pipe valves. 
 
-**Programming languages**
+🧚 **Programming languages**
 
 - Python
+- Javascript
 
-**Proposed tech – Software**
+🧚 **Proposed tech – Software**
 
 - Firebase (Storage, Web hosting)
 - Blynk (temp, humidity, notification/alarm)
 - Youtube (Live streaming)
 
-**Proposed tech - Hardware**
+🧚 **Proposed tech - Hardware**
 
 - Raspberry Pi
 - Sensor hat
@@ -48,53 +49,60 @@ The environmental control system requires using cameras to monitor and record mu
 
 # **Prepareraion**
 
-• Rasberry pi 
+🧚 **Rasberry pi**
 
  - Attach the sense hat, camera module, and webcam (USB port) to the raspberry pi.
-<img src="https://user-images.githubusercontent.com/62657957/209018247-5441610a-aa4c-4e98-b1f4-00bba3289a25.jpg" width="500" height="280">
-![PXL_20221221_224914983](https://user-images.githubusercontent.com/62657957/209018247-5441610a-aa4c-4e98-b1f4-00bba3289a25.jpg)
+<img src="https://user-images.githubusercontent.com/62657957/209018247-5441610a-aa4c-4e98-b1f4-00bba3289a25.jpg" width="420" height="280">
+ 
  - Configure the Raspberry Pi to use VS Code with SSH connection.
+ 
  - Raspberry Pi config setting  - Camera enable on
 
-• Blynk
+🧚 **Blynk**
  - Create template
-![Screenshot 2022-12-21 at 15 42 19](https://user-images.githubusercontent.com/62657957/209017081-c1e28274-f1a5-4554-a6f2-84836ac75100.png)
+<img src="https://user-images.githubusercontent.com/62657957/209017081-c1e28274-f1a5-4554-a6f2-84836ac75100.png" width="420" height="280">
 
- -Datastreams setting - Virtual Pin
-![Screenshot 2022-12-21 at 15 49 50](https://user-images.githubusercontent.com/62657957/209016904-0e57990b-ace3-466c-9605-75c96a4e37f0.png)
-![Screenshot 2022-12-21 at 15 45 00](https://user-images.githubusercontent.com/62657957/209016854-320c52f3-fc65-4815-bdda-4ac062c91792.png)
+ - Datastreams setting - Virtual Pin
+ 
+<img src="https://user-images.githubusercontent.com/62657957/209016904-0e57990b-ace3-466c-9605-75c96a4e37f0.png" width="420" height="280">
+
+<img src="https://user-images.githubusercontent.com/62657957/209016854-320c52f3-fc65-4815-bdda-4ac062c91792.png" width="420" height="280">
 
  - Create Events
-![Screenshot 2022-12-21 at 15 45 18](https://user-images.githubusercontent.com/62657957/209016745-2347bff6-0384-49d4-b714-6ace0b2b6e52.png)
-![Screenshot 2022-12-21 at 15 45 25](https://user-images.githubusercontent.com/62657957/209016785-81237ce4-ab17-40c2-bfee-86f66c95ff5c.png)
-![Screenshot 2022-12-21 at 15 45 09](https://user-images.githubusercontent.com/62657957/209016556-e3d23ee9-9056-45c2-a893-c7f257fc02a6.png)
+<img src="https://user-images.githubusercontent.com/62657957/209016745-2347bff6-0384-49d4-b714-6ace0b2b6e52.png" width="420" height="280">
+
+<img src="https://user-images.githubusercontent.com/62657957/209016785-81237ce4-ab17-40c2-bfee-86f66c95ff5c.png" width="420" height="280">
+
+<img src="https://user-images.githubusercontent.com/62657957/209016556-e3d23ee9-9056-45c2-a893-c7f257fc02a6.png" width="420" height="280">
 
  - Web dashboad set up (Youtube URL added on Video widget, Datastream setting on Gauge and chart)
-![Screenshot 2022-12-21 at 16 03 22](https://user-images.githubusercontent.com/62657957/209016407-e2d938e1-beb3-478e-acf8-62f1bea6d2f8.png)
-![Screenshot 2022-12-21 at 16 05 02](https://user-images.githubusercontent.com/62657957/209016288-b81ce3cb-8b5f-405c-a126-c229bd045069.png)
-![Screenshot 2022-12-21 at 16 05 13](https://user-images.githubusercontent.com/62657957/209015912-3157addb-cefd-4a1d-8786-843902d0fbd5.png)
-![Screenshot 2022-12-21 at 16 05 02](https://user-images.githubusercontent.com/62657957/209015923-fe7920ea-7422-444f-999a-92e1d832399e.png)
+<img src="https://user-images.githubusercontent.com/62657957/209016407-e2d938e1-beb3-478e-acf8-62f1bea6d2f8.png" width="420" height="280">
+<img src="https://user-images.githubusercontent.com/62657957/209016288-b81ce3cb-8b5f-405c-a126-c229bd045069.png" width="420" height="280">
+<img src="https://user-images.githubusercontent.com/62657957/209015912-3157addb-cefd-4a1d-8786-843902d0fbd5.png" width="420" height="280">
+<img src="https://user-images.githubusercontent.com/62657957/209015923-fe7920ea-7422-444f-999a-92e1d832399e.png" width="420" height="280">
 
  - download mobile app and set up widget
-![Screenshot_20221221-160028](https://user-images.githubusercontent.com/62657957/209016028-c4d56f8c-6867-4c63-82bc-ca480aee31d6.png)
-![Screenshot_20221221-160042](https://user-images.githubusercontent.com/62657957/209016101-199a5adf-23bc-446f-9bd7-f276de59f78c.png)
+ 
+<img src="https://user-images.githubusercontent.com/62657957/209016028-c4d56f8c-6867-4c63-82bc-ca480aee31d6.png" width="150" height="280">
+<img src="https://user-images.githubusercontent.com/62657957/209016101-199a5adf-23bc-446f-9bd7-f276de59f78c.png" width="150" height="280">
 
 
-• Youtube (Live streaming)
+🧚 **Youtube (Live streaming)**
 
  - Request access to live stream on Youtube Studio
  - Create Live schedule and get stream key
  - install FFmpeg on Raspberry pi
 
-• Firebase
+🧚 **Firebase**
  - install firebase tool to Raspberry pi
  - Create project on Firebase console
- ![Screenshot 2022-12-21 at 16 20 13](https://user-images.githubusercontent.com/62657957/209015707-ad96432a-11a2-4aa5-845b-87b41ce09252.png)
+
+<img src="https://user-images.githubusercontent.com/62657957/209023745-1749ed97-eab7-49e3-b7e2-bc41cf333850.png" width="420" height="280">
 
 
 # **Overview**
 
-**temp_humid.py:**
+🌱 **temp_humid.py:**
 
 To Run type in the command: python3 temp_humid.py
 
@@ -102,38 +110,42 @@ To Run type in the command: python3 temp_humid.py
 
 (2) If the temperature is above or below the set temperature, send a logEvent request with a code of either temp_too_high or temp_too_low to the Blynk server. Similarly, if the humidity is above or below the configured humidity, it will send a logEvent request with either the code humidity_too_high or humidity_too_low to the Blynk server. This will notify you via popup and email in the Blynk application.
 
-**schedule_pi.py:**
+🌱 **schedule_pi.py:**
 
 To Run type in the command: python3 schedule_pi.py
 
 It schedules light lighting and light color switch schedule, feeding time alarm, and image capture.
 
 (1) The LED light of the sense hat is set with the python schedule library that it lights up in red or green at a set time.
+
 (2) Capture an image at a set time and automatically save it to Firebase storage using the storeFileFB.py function. During image capture, turn off the lights (there is a white setting if it's dark) and save a color correct photo for color recognition.
+
 (3) Send an HTTP GET request to the URL and send a log event to the API endpoint using Python's requests library to notify the feeding time of water etc. Blynk's Event settings will send push notifications and emails.
 
-**storeFileFB.py**
+🌱 **storeFileFB.py**
 
 Upload files to Google Cloud Storage and push filenames to Realtime Database
 
-**streaming.py**
+🌱 **streaming.py**
 
 To Run type in the command: python3 streaming.py
 
 Using Python's subprocess module to run the streaming.sh script
 
-**streaming.sh**
+🌱 **streaming.sh**
 
 A script that uses ffmpeg commands to start YouTube Live streaming.
 If don't use streaming.py, able to run with ./streaming.sh
 
-**Web hosting**
+🌱 **Web hosting**
 
-firebase-hosting: https://plant-factory-d18f0.web.app/
-glitch: https://plant-factory-project.glitch.me/
+👉 firebase-hosting: https://plant-factory-d18f0.web.app/
+
+👉 glitch: https://plant-factory-project.glitch.me/
 
 Use Firebase's Realtime Database and Cloud Storage to get the URL of the latest image and display it
 
+# **Project Diagram**
 
 ![Project Diagram 1](https://user-images.githubusercontent.com/62657957/208902142-462367e2-2f95-464f-8d08-ee4d7120a22b.png)
 
