@@ -51,7 +51,7 @@ The environmental control system requires using cameras to monitor and record mu
 • Rasberry pi 
 
  - Attach the sense hat, camera module, and webcam (USB port) to the raspberry pi.
-![PXL_20221221_224914983](https://user-images.githubusercontent.com/62657957/209018247-5441610a-aa4c-4e98-b1f4-00bba3289a25.jpg | width=100)
+![PXL_20221221_224914983](https://user-images.githubusercontent.com/62657957/209018247-5441610a-aa4c-4e98-b1f4-00bba3289a25.jpg =250x250)
  - Configure the Raspberry Pi to use VS Code with SSH connection.
  - Raspberry Pi config setting  - Camera enable on
 
