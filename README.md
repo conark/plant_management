@@ -5,7 +5,6 @@
 
 # **Plant Factory - Environment Management** 
 
-**Name: Natsumi Shimizu**
 
 # New Agriculture Style
 Smart & Sustanable 
@@ -31,23 +30,23 @@ The environmental control system requires using cameras to monitor and record mu
 **Proposed tech - Hardware**
 
 - Raspberry Pi
-- Sensor hut
+- Sensor hat
 - Raspberry Pi Camera module
 - USB connect Web camera (Logicool HD720p)
 - A Box as Factory 
 
 **Functions**
 
-1. Shine the LED light on the plant - set it to alternate between red  and green light every 12 mins. (Originally every 12 hours)
+1. Shine the LED light on the plant - set it to alternate between red  and green light every 12 seconds. (Originally every 12 hours)
 2. Measure and display temperature/humidity on Blynk
-3. Feed timing alarm every 12 mins on Blynk (originally every 12 hours). 
-4. Real-time monitoring with Web camera on youtube. (Optional 
-Recognition of harvest time – e.g. if tomato became red) 
+3. Feed timing alarm every 12 seconds on Blynk (originally every 12 hours). 
+4. Real-time monitoring with Web camera on youtube. 
 5. Send a notification/message to the phone if the temp/humidity is outside of expected range.
+6. Schedule for takeing photo for Recognition of harvest time (e.g. if tomato became red) *not inplemented code for Recognition of harvest time*
 
 
 
-![Project Diagram 1 (1)](https://user-images.githubusercontent.com/62657957/205108305-e7717d0a-cf22-4771-b7db-340660751ae0.png)
+![Project Diagram 1](https://user-images.githubusercontent.com/62657957/208902142-462367e2-2f95-464f-8d08-ee4d7120a22b.png)
 
 
 [Plant.Factory.pdf](https://github.com/conark/plant_factory_environment_management/files/9994837/Plant.Factory.pdf)
