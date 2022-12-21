@@ -42,7 +42,8 @@ The environmental control system requires using cameras to monitor and record mu
 3. Feed timing alarm every 12 seconds on Blynk (originally every 12 hours). 
 4. Real-time monitoring with Web camera on youtube. 
 5. Send a notification/message to the phone if the temp/humidity is outside of expected range.
-6. Schedule for takeing photo for Recognition of harvest time (e.g. if tomato became red) *not inplemented code for Recognition of harvest time*
+6. Schedule for takeing photo for Recognition of harvest time (e.g. if tomato became red) (*not implemented code for Recognition of harvest time*)
+7. Web hosting for latest updated photo
 
 
 
