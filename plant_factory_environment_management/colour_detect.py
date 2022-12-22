@@ -2,6 +2,12 @@
 import os
 from PIL import Image
 import numpy as np
+import requests
+import os
+from dotenv import load_dotenv
+
+# load .env　file
+load_dotenv()
 
 
 image_dir = 'image/'
@@ -12,6 +18,7 @@ print(latest_file)
 # Open image and ensure RGB
 im = Image.open('image/'+latest_file).convert('RGB')
 print (im)
+# for specific photo
 # im = Image.open('image/TomatoY.jpg').convert('RGB')
 
 # Make into Numpy array
@@ -28,4 +35,10 @@ red_counts = counts[(colours[:,0] == 255) & (colours[:,1] <= 79) & (colours[:,2]
 print (red_colours)
 print (red_counts)
 print(red_counts.sum())
+
+if red_counts.sum() >= 1:
+    print ("found red")
+    requests.get("https://blynk.cloud/external/api/logEvent?token="+(os.environ['BLYNK_AUTH'])+"&code=harvest_info")
+else :
+    print ("no detected")
 
