@@ -1,27 +1,15 @@
-//import firebase from "firebase/app"
-import { getRemoteConfig } from "firebase/remote-config";
-import { getStorage } from "firebase/storage"
-import { getDatabase } from "firebase/database"
-import { getHosting } from "firebase/hosting"
-import dotenv from "dotenv";
-import { env } from 'node:process';
-
-//.env ファイルの内容を読み込
-//require('dotenv').config({path: '.env'});
-//const functions = require('firebase-functions');
-//require('dotenv').config()
 
 const firebaseConfig = {
-  //apiKey: process.env.apiKey,
-    //authDomain: "process.env.authDomain",
-  APIKEY: "process.env.APIKEY",
-  authDomain: "process.env.AUTHDOMAIN",
-  databaseURL: "process.env.DATABASEURL",
-  projectId: "process.env.PROJECTID",
-  storageBucket: "process.env.STORAGEBUCKET",
-  messagingSenderId: "process.env.MESSAGINGSENDERID",
-  appId: "process.env.APPID"
+  apiKey: "AIzaSyBEN8GxRzsbcIFWvi6ZOC9-IUb56RaSl3A",
+  authDomain: "plant-factory-d18f0.firebaseapp.com",
+  databaseURL: "https://plant-factory-d18f0-default-rtdb.europe-west1.firebasedatabase.app",
+  projectId: "plant-factory-d18f0",
+  storageBucket: "plant-factory-d18f0.appspot.com",
+  messagingSenderId: "501760499301",
+  appId: "1:501760499301:web:334c54a88c2483302ef08c"
+
  };
+
 
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);

@@ -1,4 +1,7 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
 # Import necessary libraries
+import os
 from sense_hat import SenseHat
 from picamera import PiCamera
 from time import sleep
@@ -8,6 +11,13 @@ import schedule
 import requests
 import storeFileFB
 import json
+from dotenv import load_dotenv
+import os
+
+# load .env　file
+load_dotenv()
+
+BLYNK_AUTH = os.getenv ('BLYNK_AUTH')
 
 # Initialize the camera and sensehat
 sense = SenseHat()
@@ -60,9 +70,9 @@ schedule.every().day.at("11:16").do(imageCap)
 schedule.every().day.at("11:17").do(red_light)
 schedule.every().day.at("11:20").do(green_light)
 
-
+# notification for feeding time
 def feedMorning():
-  requests.get("https://blynk.cloud/external/api/logEvent?token=fFBWjj108jcqQ7XmRXeDQ4MCMHJ3os6_&code=feed_morning")  
+  requests.get("https://blynk.cloud/external/api/logEvent?token="+(os.environ['BLYNK_AUTH'])+"&code=feed_morning")  
 
 def feedEvening():
   requests.get("https://blynk.cloud/external/api/logEvent?token=fFBWjj108jcqQ7XmRXeDQ4MCMHJ3os6_&code=feed_evening")  
@@ -73,16 +83,16 @@ def feedEvening():
 #schedule.every().day.at("18:00").do(feedEvening)
 #####################################################
 # test schedule
-schedule.every().day.at("11:18").do(feedMorning)
-schedule.every().day.at("11:21").do(feedEvening)
+schedule.every().day.at("10:40").do(feedMorning)
+schedule.every().day.at("10:41").do(feedEvening)
 
 
 while True:
   sense.clear()
   schedule.run_pending()
-  imageCap()  
-  red_light()
-  green_light()
+  # imageCap()  
+  # red_light()
+  # green_light()
   time.sleep(1)
   sense.clear()
 

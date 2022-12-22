@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+import os
 import BlynkLib
 from sense_hat import SenseHat
 from time import sleep

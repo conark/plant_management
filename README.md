@@ -11,8 +11,7 @@
 Smart & Sustanable 
 
 Due to the population increasing, it is said that a food crisis will occur throughout the world within the near future. In Ireland, a country which relies on importing  most of its food, vegetable and fruit farming is not the thriving industry that it is in other countries due to problems with weather and soil. 
-
-Today, various technologies have been incorporated into agriculture. This creates an environment in which vegetables and fruits can be grown even in suboptimal conditions. One option we can examine is a plant  factory. In a plant factory, plants are grown indoors so they are not affected by the weather. In addition,  since the factory does not use soil, food can be grown anywhere by hydroponics or film cultivation. Plant  factories are easier to manage using technology, so we can counter any atypical growing environment to  cultivate efficient and clean farming.
+ food can be grown anywhere by hydroponics or film cultivation. Plant  factories are easier to manage using technology, so we can counter any atypical growing environment to  cultivate efficient and clean farming.
 
 # Environmental Management with IoT
 
