@@ -18,7 +18,8 @@ The environmental control system requires using cameras to monitor and record mu
 
 # **Project Diagram**
 
-![Project Diagram 1](https://user-images.githubusercontent.com/62657957/208902142-462367e2-2f95-464f-8d08-ee4d7120a22b.png)
+![Project Diagram 1 (2)](https://user-images.githubusercontent.com/62657957/209211790-c93e678e-9315-4b24-b421-242028f87410.png)
+
 
 🧚 **Programming languages**
 
@@ -46,7 +47,8 @@ The environmental control system requires using cameras to monitor and record mu
 3. Feed timing alarm every 12 seconds on Blynk (originally every 12 hours).
 4. Real-time monitoring with Web camera on youtube.
 5. Send a notification/message to the phone if the temp/humidity is outside of expected range.
-6. Schedule for taking photo for Recognition of harvest time (e.g. if tomato became red) not implemented code for recognition of harvest time
+6. Schedule for taking photo for Recognition of harvest time 
+7. Recognition of harvest time (e.g. if tomato became red) 
 7. Web hosting for latest updated photo
 
 
@@ -147,6 +149,9 @@ If don't use streaming.py, able to run with ./streaming.sh
 
 To Run type in the command: python3 colour_detect.py 
 
+Recognition of harvest time (e.g. if tomato became red) not implemented code for recognition of harvest time
+
+Send a notification to Blynk if  a red color in the latest image.
 
 🌱 **Web hosting**
 
