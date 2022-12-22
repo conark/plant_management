@@ -37,21 +37,21 @@ while True:
     blynk.virtual_write(2, round(sense.humidity,2))
     sleep(0.5) # sleep for .5 second
     # temp over 35 or less than 25 notify to Blynk (popup and email)
-    if sense.temperature >= 35:
+    if sense.temperature >= 30:
         print ('temp hot')
-        requests.get("https://blynk.cloud/external/api/logEvent?token=fFBWjj108jcqQ7XmRXeDQ4MCMHJ3os6_&code=temp_too_high")
+        requests.get("https://blynk.cloud/external/api/logEvent?token="+(os.environ['BLYNK_AUTH'])+"&code=temp_too_high")
     elif sense.temperature <= 25:
         print ('temp low')
-        requests.get("https://blynk.cloud/external/api/logEvent?token=fFBWjj108jcqQ7XmRXeDQ4MCMHJ3os6_&code=temp_too_low")
+        requests.get("https://blynk.cloud/external/api/logEvent?token="+(os.environ['BLYNK_AUTH'])+"&code=temp_too_low")
     else:
         print ('temp fine')
     # humidity over 40 or less than 20 notify to Blynk (popup and email)
     if sense.humidity >= 40:
         print ('humid high')
-        requests.get("https://blynk.cloud/external/api/logEvent?token=fFBWjj108jcqQ7XmRXeDQ4MCMHJ3os6_&code=humidity_too_high")
+        requests.get("https://blynk.cloud/external/api/logEvent?token="+(os.environ['BLYNK_AUTH'])+"&code=humidity_too_high")
     elif sense.humidity <= 20:
         print ('humid low')
-        requests.get("https://blynk.cloud/external/api/logEvent?token=fFBWjj108jcqQ7XmRXeDQ4MCMHJ3os6_&code=humidity_too_low")
+        requests.get("https://blynk.cloud/external/api/logEvent?token="+(os.environ['BLYNK_AUTH'])+"&code=humidity_too_low")
     else:
         print ('humid fine')
 

@@ -16,6 +16,10 @@ Due to the population increasing, it is said that a food crisis will occur throu
 
 The environmental control system requires using cameras to monitor and record multiple growth factors such as temperature, humidity, light. Timers indicate when to open and close pipe valves. 
 
+# **Project Diagram**
+
+![Project Diagram 1](https://user-images.githubusercontent.com/62657957/208902142-462367e2-2f95-464f-8d08-ee4d7120a22b.png)
+
 🧚 **Programming languages**
 
 - Python
@@ -29,8 +33,8 @@ The environmental control system requires using cameras to monitor and record mu
 
 🧚 **Proposed tech - Hardware**
 
-- Raspberry Pi
-- Sensor hat
+- Raspberry Pi 4B
+- Sense hat
 - Raspberry Pi Camera module
 - USB connect Web camera (Logicool HD720p)
 - A Box as Factory 
@@ -58,6 +62,9 @@ The environmental control system requires using cameras to monitor and record mu
  - Raspberry Pi config setting  - Camera enable on
 
 🧚 **Blynk**
+
+ - Install Blynk Library
+
  - Create template
 <img src="https://user-images.githubusercontent.com/62657957/209017081-c1e28274-f1a5-4554-a6f2-84836ac75100.png" width="420" height="280">
 
@@ -136,6 +143,11 @@ Using Python's subprocess module to run the streaming.sh script
 A script that uses ffmpeg commands to start YouTube Live streaming.
 If don't use streaming.py, able to run with ./streaming.sh
 
+🌱 **colour_detect.py**
+
+To Run type in the command: python3 colour_detect.py 
+
+
 🌱 **Web hosting**
 
 👉 firebase-hosting: https://plant-factory-d18f0.web.app/
@@ -144,8 +156,6 @@ If don't use streaming.py, able to run with ./streaming.sh
 
 Use Firebase's Realtime Database and Cloud Storage to get the URL of the latest image and display it
 
-# **Project Diagram**
 
-![Project Diagram 1](https://user-images.githubusercontent.com/62657957/208902142-462367e2-2f95-464f-8d08-ee4d7120a22b.png)
 
 
