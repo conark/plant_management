@@ -149,7 +149,7 @@ If don't use streaming.py, able to run with ./streaming.sh
 
 To Run type in the command: python3 colour_detect.py 
 
-Recognition of harvest time (e.g. if tomato became red) not implemented code for recognition of harvest time
+Recognition of harvest time (e.g. if tomato became red) 
 
 Send a notification to Blynk if  a red color in the latest image.
 
